@@ -22,6 +22,6 @@ class BasicSimulation extends Simulation {
     )
 
   setUp(
-    scn.inject(rampUsersPerSec(1) to (200) during(240))
+    scn.inject(rampUsersPerSec(1) to (2000) during(240))
   ).protocols(httpConf)
 }
